@@ -1001,20 +1001,6 @@ export type _expr = or_expr | unary_expr;
 
 export type expr = _expr | union_stmt;
 
-export type BINARY_OPERATORS = LOGIC_OPERATOR | 'OR' | 'AND' | multiplicative_operator | additive_operator
-      | arithmetic_comparison_operator
-      | 'IN' | 'NOT IN'
-      | 'BETWEEN' | 'NOT BETWEEN'
-      | 'IS' | 'IS NOT'
-      | 'LIKE'
-      | '@>' | '<@' | OPERATOR_CONCATENATION | DOUBLE_WELL_ARROW | WELL_ARROW | '?' | '?|' | '?&' | '#-'
-    export interface binary_expr {
-      type: 'binary_expr',
-      operator: BINARY_OPERATORS,
-      left: expr,
-      right: expr
-    }
-
 export type UNARY_OPERATORS = '+' | '-' | 'EXISTS' | 'NOT EXISTS'  | 'NULL'
 
 export type unary_expr = {

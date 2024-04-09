@@ -3529,7 +3529,7 @@ interval_unit
   / KW_UNIT_HOUR
   / KW_UNIT_MINUTE
   / KW_UNIT_SECOND
-  / u:('years'i / 'months'i / 'days'i / 'hours'i / 'minutes'i / 'seconds'i) {
+  / u:('years'i / 'months'i / 'days'i / 'hours'i / 'minute'i / 'seconds'i) {
     return u.toUpperCase()
   }
 
